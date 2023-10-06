@@ -61,7 +61,7 @@ A consulta pode ser feita através de:
 * Nome do credor : nome
 * CPF/CNPJ/RNE do credor: cpf/cnpj/rne
 
-## Tela 4 - Deletar: Deletetar dados do banco de dados
+## Tela 4 - Deletar: Deletar dados do banco de dados
 
 <img title="Deletar" alt="Alt text" src="./imgs/tela_04.png">
 
@@ -74,3 +74,5 @@ A consulta pode ser feita através de:
 * Natureza do processo : Natureza
 * Nome do credor : nome
 * CPF/CNPJ/RNE do credor: cpf/cnpj/rne
+
+Após pesquisa o sistema irá mostrar a listagem de processos encontrados segundo o critério de pesquisa. É exibido um botão para o usuário confirmar a remoção dos processos encontrados.
