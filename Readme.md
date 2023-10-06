@@ -1,4 +1,4 @@
-# Raspagemd e processos do TJSP
+# Raspagem de processos do TJSP
 
 ## Descrição
 Este projeto foi criado para realizar a raspagem de processos no portal do TJSP a partir de um arquivo PDF com a listagem de processos a ser consultada. Os processos são baixados em um diretório definido pelo usuário e após podem ser exportados para um banco de dados MongoDB.
