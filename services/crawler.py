@@ -12,13 +12,14 @@ from selenium.webdriver.support import expected_conditions as EC
 class CrawlerTJSP():
     
     
-    def __init__(self, user: str, pswd:str, download_dir=None) -> None:
-        """_summary_
+    def __init__(self, user: str, pswd:str, download_dir:str=None) -> None:
+        """
+        Initialize the TJSP crawler.
 
         Args:
-            user (str): _description_
-            pswd (str): _description_
-            download_dir (_type_, optional): _description_. Defaults to None.
+            user (str): Username
+            pswd (str): Pass word
+            download_dir (str, optional): Path of the directory where the lawsuit will be saved. Defaults to None.
         """
         self.__user = user # username
         self.__pswd = pswd # password
