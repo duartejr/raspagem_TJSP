@@ -17,16 +17,16 @@ def delete():
     
     field = st.radio('Campo', ['Número processo', 
                                'Processo principal',
-                                'Devedor', 
-                                'Natureza', 
-                                'nome',
-                                'cpf/cnpj/rne'])
+                               'Devedor', 
+                               'Natureza', 
+                               'nome',
+                               'cpf/cnpj/rne'])
     
     order = st.text_input('Informe o ' + field)
     
     if order:
         
-        if field in ['nome','cpf/cnpj/rne']:
+        if field in ['nome', 'cpf/cnpj/rne']:
             order = {f"credores.{field}": order}
         else:
             order = {field: order}
@@ -38,7 +38,6 @@ def delete():
         
         if len(documents) and st.button('Confirma remoção?'):
             my_collection_repository.delete_documents(documents)
-            
             st.write('Processo(s) removido')
             
         
